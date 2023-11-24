@@ -6,10 +6,10 @@ class Node:
 class SinglyLL:
     def __init__(self,start=None):
         self.start=start
-    
+    # O(1)
     def is_empty(self):
         return self.start==None
-
+    # O(1)
     def insert_at_start(self,data):
         n=Node(data, self.start)
         self.start = n
@@ -83,7 +83,7 @@ class SLLIterator:
     def __next__(self):
         if not self.current:
             raise StopIteration
-        data = self.current.item
+        data = self.current.data
         self.current=self.current.next
         return data
 
@@ -91,13 +91,13 @@ class SLLIterator:
         
 
 
-# mylist = SinglyLL()
-# mylist.insert_at_start(5)
-# mylist.insert_at_start(4)
-# mylist.insert_at_start(2)
-# mylist.insert_at_start(5)
-# mylist.insert_at_start(6)
-# mylist.insert_at_start(1)
-# mylist.insert_at_start(4)
+mylist = SinglyLL()
+mylist.insert_at_start(5)
+mylist.insert_at_start(4)
+mylist.insert_at_start(2)
+mylist.insert_at_start(5)
+mylist.insert_at_start(6)
+mylist.insert_at_start(1)
+mylist.insert_at_start(4)
 
-# mylist.print_list()
+mylist.print_list()
