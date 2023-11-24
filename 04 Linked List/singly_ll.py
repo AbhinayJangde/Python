@@ -2,7 +2,6 @@ class Node:
     def __init__(self, data=None,next=None):
         self.data = data
         self.next = next
-    
 class SinglyLL:
     def __init__(self,start=None):
         self.start=start
@@ -87,17 +86,14 @@ class SLLIterator:
         self.current=self.current.next
         return data
 
-       
-        
+# mylist = SinglyLL()
+# mylist.insert_at_start(5)
+# mylist.insert_at_start(4)
+# mylist.insert_at_start(2)
+# mylist.insert_at_start(5)
+# mylist.insert_at_start(6)
+# mylist.insert_at_start(1)
+# mylist.insert_at_start(4)
 
+# mylist.print_list()
 
-mylist = SinglyLL()
-mylist.insert_at_start(5)
-mylist.insert_at_start(4)
-mylist.insert_at_start(2)
-mylist.insert_at_start(5)
-mylist.insert_at_start(6)
-mylist.insert_at_start(1)
-mylist.insert_at_start(4)
-
-mylist.print_list()
